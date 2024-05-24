@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+    background: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.div{
+    width: 200px;
+    height: 200px;
+    background: maroon;
+    border: 3px dotted lawngreen ;
+    position: absolute;
+    animation: move infinite linear 6s;
+}
+@keyframes move{
+    20%{
+        
+        background: yellow;
+        top: 40%;
+        left: 0;
+    }
+    40%{
+        background: orangered;
+        top: 0;
+        left: 40%;
+    }
+    60%{
+        
+        color: purple;
+        top: 40%;
+        left: 82%;
+    }
+    80%{
+        
+        background: palevioletred;
+        top: 65%;
+        left: 40%;
+    }
+     0% , 100%{
+        background: maroon;
+        top: 40%;
+        left: 40%;
+       
+    }
+}
